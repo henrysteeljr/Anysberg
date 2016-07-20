@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="A simple responsive navigation menu using HTML, CSS, and a bit of jQuery." />
+<title>Anysberg Biltong & Deli</title>
+  <link rel="shortcut icon" type="image/x-icon" href="knife-icon.png" />  
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style.css" />
+    
+    <script>
+        function hideText(){
+        $(document).ready(function(){
+        
+        
+        $("#logo").delay(1000).fadeIn(4000);
+        
+        });
+        
+  }
+
+        
+        
+        </script>
+    
+        
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="velocity.js"></script>
+		<script src="blast.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#logo").hide();
+        $("#nav-mobile").html($("#nav-main").html());
+        $("#nav-trigger span").click(function(){
+            if ($("nav#nav-mobile ul").hasClass("expanded")) {
+                $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+                $(this).removeClass("open");
+            } else {
+                $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+                $(this).addClass("open");
+            }
+        });
+    });
+</script>
+<script>
+    $(window).load(function() {
+  $(".all").animate({
+    width: "46%"
+      }, 1250);
+  });
+
+
+
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+
+</head>
+
+
+
+<body onload = "hideText()">
+
+    
+    
+
+<div id="wrapper">
+
+
+
+<header>
+        
+     
+    <div id = "orangeL">
+        
+        </div>
+   
+    <div id = "blackL">
+        <img id = "logo" src = "AnysovaalSmallBlackE.png">
+     
+        </div>
+        
+        
+        
+</header><!-- /header -->
+             
+
+
+<div id="main">
+    <div class="container">
+       
+        <nav id="nav-main">
+            <ul>
+                <li><a href="">Home</a></li>
+                
+                <li onclick = "gal()" style = "cursor:pointer;"><a>Gallery</a></li>
+              
+                <li onclick = "con()" style = "cursor:pointer;"><a>Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-mobile"></nav>
+
+        <section>
+            <center>
+                <h3>Visit Anysberg Biltong & Deli at a store near you</h3>
+            <p></p>
+            <ul id = "shopDiv">
+            <li><a id = "shops" href = "https://www.google.co.za/maps/place/Anysberg+Biltong+%26+Deli/@-33.8312814,18.6446615,17z/data=!4m13!1m7!3m6!1s0x1dcc5713e6aecdb1:0xd23ad410d4637789!2sAnysberg+Biltong+%26+Deli!3b1!8m2!3d-33.8312859!4d18.6468502!3m4!1s0x1dcc5713e6aecdb1:0xd23ad410d4637789!8m2!3d-33.8312859!4d18.6468502?hl=en" target = "blank">SHOPS</a></li>
+            </ul>
+            </br>
+            <a href = "https://www.facebook.com/groups/anysberg" target = "blank"><img id = "face" src = "Facebook.png"></a>
+         </center>
+        </section>
+        </div>
+</div><!-- #main -->
+    <center>
+        <a id = "online" href="https://biltongsa.com" target = "blank">&larr; Go to Online Shopping - Biltongsa.co.za</a>
+        </center>
+
+<!-- /#top-bar -->
+       
+    
+
+<footer>
+    <center>
+        <p id = "about">Order online today. Variety of hampers available.</p>
+        
+        
+        <div id = "pictures">
+  <img src = "AnysGeorge.jpg" class = "picOne">   
+      <img src = "Anysberg1.jpg" class = "picTwo">
+      </div>
+      <div id = "contact">
+   <H2 id = "phone">Phone: +27 83 2772681</H2></br><H2 id = "email">Email: jtbotes@icloud.com</H2>
+      </div>
+     
+     
+      
+      
+</center>
+
+
+
+</footer><!-- /footer -->
+
+
+
+</div><!-- /#wrapper -->
+<script>
+    $("#contact").hide();
+    $("#pictures").hide();
+   
+    </script>
+    <script>
+        function gal() {
+        $("#pictures").show();
+        $("#contact").hide();
+        $("#about").hide();
+        }
+        </script>
+        <script>
+        function con() {
+        $("#contact").show();
+        $("#pictures").hide();
+        $("#about").hide();
+        }
+        </script>
+       
+
+<script>
+$(document).ready(function(){
+    $(window).load(function(){
+        $("H1").animate({left: '250px'});
+    });
+});
+</script>
+
+
+</body>
+</html>
